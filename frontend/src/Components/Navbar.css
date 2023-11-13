@@ -1,0 +1,16 @@
+.navbar{
+    background-color: tranparent;
+}
+
+.linktag{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 25px;
+}
+.navbardiv{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.instructionstag{
+    margin-left: 35rem;
+}

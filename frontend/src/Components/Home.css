@@ -1,0 +1,21 @@
+h2{
+    color: rgb(223, 228, 228);   
+    font-size: 55px;
+    padding-right: 825px;
+    padding-left : 28px;
+  }
+/* .homepage{
+    background-image: url("/public/images/background-5.jpg");
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+    height: 650px;
+} */
+.heading1{
+    padding-top: 145px;
+}
+.validateproductbtn{
+    margin-left: 29px;
+    margin-top: 15px;
+}
+

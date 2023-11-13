@@ -1,0 +1,36 @@
+.loginpage{
+    background-color: blueviolet;
+    width: 400px;
+    height: 350px;
+    margin-left : 550px;
+    margin-top: 105px;
+    border: solid blueviolet;
+    border-radius: 15px;
+    padding-top: 15px;
+}
+label{
+    font-size: 21px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+.loginform-control{
+    width: 85%;
+    margin-bottom: 20px;
+    margin-top: 2px;
+    
+}
+.logininputs{
+    padding-left: 45px;
+    padding-top: 15px;
+}
+.navtoregister{
+    text-align: center;
+    color: white;
+}
+.navregister{
+    color: white;
+}
+.loginbtn{
+    margin-bottom: 7px;
+    margin-top: -5px;
+}
