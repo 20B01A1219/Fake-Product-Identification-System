@@ -1,10 +1,11 @@
 /* .App {
   text-align: center;
 } */
-.App{
-  background-image: url("/public/images/background-5.jpg");
+.App {
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqy0byaaMAIQhlwQQVJjXNkpK-8mBpphDZZtjCD57jfyqLcGBpGFBQG1jFmBy0a-Xp1Tc&usqp=CAU")
+    no-repeat;
   background-size: cover;
-  background-position: center ;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 1050px;
@@ -43,4 +44,3 @@
     transform: rotate(360deg);
   }
 }
-

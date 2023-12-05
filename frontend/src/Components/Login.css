@@ -1,36 +1,91 @@
-.loginpage{
-    background-color: blueviolet;
-    width: 400px;
-    height: 350px;
-    margin-left : 550px;
-    margin-top: 105px;
-    border: solid blueviolet;
-    border-radius: 15px;
-    padding-top: 15px;
+.login{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: -52px;
 }
-label{
-    font-size: 21px;
-    padding-bottom: 10px;
-    font-weight: 500;
+
+.login-box{
+   width:420px;
+   background: transparent;
+   border: 2px solid rgba(255,255,255,.2);
+   backdrop-filter: blur(20px);
+   box-shadow: 0 0 10px rgba(0,0,0,.2);
+   color:#fff;
+   border-radius: 10px;
+   padding: 20px 20px;
 }
-.loginform-control{
-    width: 85%;
-    margin-bottom: 20px;
-    margin-top: 2px;
-    
+
+.login-box h1{
+   font-size: 25px;
+   text-align: center;
 }
-.logininputs{
-    padding-left: 45px;
-    padding-top: 15px;
+
+.login-box .input-box{
+   
+   width: 100%;
+   height: 40px;
+   margin: 30px 0;
+   
 }
-.navtoregister{
-    text-align: center;
-    color: white;
+.input-box input{
+   width: 90%;
+   height: 100%;
+   background: transparent;
+   border: none;
+   outline :none;
+   border: 2px solid rgba(255,255,255,.2);
+   border-radius: 40px;
+   font-size: 16px;
+   color: #fff;
+   padding-left: 20px;
+   margin-left :5px;
+   
 }
-.navregister{
-    color: white;
+
+.input-box input::placeholder{
+   color: #fff;
 }
-.loginbtn{
-    margin-bottom: 7px;
-    margin-top: -5px;
+.pswd{
+   margin-left: 225px;
+   margin-bottom: 5px;
 }
+.pswdlink{
+   color: #fff;
+   text-decoration: none;
+}
+.pswdlink:hover{
+   text-decoration: underline;
+}
+
+.login-box .btn{
+   width: 90%;
+   height: 35px;
+   background-color: black;
+   color:white;
+   border: none;
+   outline :none;
+   border-radius: 40px;
+   margin-left :5px;
+   box-shadow: 0 0 10px rgba(0,0,0,.1);
+   cursor: pointer;
+   font-size: 16px;
+   font-weight: 600;
+}
+
+
+.login-box .register-link{
+   font-size: 14.5px;
+   text-align: center;
+   
+}
+.register-link p a {
+   color: #fff;
+   text-decoration: none;
+   font-weight: 600;
+}
+.register-link p a:hover{
+   text-decoration: underline;
+}
+

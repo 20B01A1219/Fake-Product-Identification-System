@@ -28,7 +28,7 @@ app.post("/", (req, res) => {
 app.post("/login",(req, res)=>{
   const {email, password} = req.body;
   const values = [email, password];
-  const loginqry = "select * from registrations where email = ? and password = ?";
+  const loginqry = "select * from registrations where binary email = ? and binary password = ?";
   connection.query(loginqry, values, (err, result)=>{
     if (err) {
       res.status(500).send(err);

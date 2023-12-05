@@ -24,47 +24,48 @@ function Register() {
   function passwordupdate(event) {
     setpassword(event.target.value);
   }
-  const registeruser=async(e) =>{
+  const registeruser = async (e) => {
     e.preventDefault();
-    try{
-      await axios.post('http://localhost:8000/', {
-        email,
-        name,
-        company,
-        empid,
-        password
-      })
-      .then(response => {
-        toast.success(response.data, {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "colored",
+    try {
+      await axios
+        .post("http://localhost:8000/", {
+          email,
+          name,
+          company,
+          empid,
+          password,
+        })
+        .then((response) => {
+          toast.success(response.data, {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
           });
-      })
-      .catch(error => {
-        toast.error('Something went wrong', {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "colored",
+        })
+        .catch((error) => {
+          toast.error("Something went wrong", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
           });
-      });
-    setemail("");
-    setname("");
-    setcompany("");
-    setempid("");
-    setpassword("");
-    }catch(error){
-      toast.error('Something went wrong', {
+        });
+      setemail("");
+      setname("");
+      setcompany("");
+      setempid("");
+      setpassword("");
+    } catch (error) {
+      toast.error("Something went wrong", {
         position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
@@ -73,67 +74,57 @@ function Register() {
         draggable: true,
         progress: undefined,
         theme: "colored",
-        });
+      });
     }
-    
-  }
+  };
   return (
     <div className="register">
-      <div className="registerinputs">
-        <label>Email</label>
-        <br />
-        <input
-          type="text"
-          class="form-control registerform-control"
-          placeholder="Enter your email"
-          value={email}
-          onChange={emailupdate}
-        />
-        <br />
-        <label>Name</label>
-        <br />
-        <input
-          type="text"
-          class="form-control registerform-control"
-          placeholder="Enter your name"
-          value={name}
-          onChange={nameupdate}
-        />
-        <br />
-        <label>Company</label>
-        <br />
-        <input
-          type="text"
-          class="form-control registerform-control"
-          placeholder="Enter your company"
-          value={company}
-          onChange={companyupdate}
-        />
-        <br />
-        <label>Employee id</label>
-        <br />
-        <input
-          type="text"
-          class="form-control registerform-control"
-          placeholder="Enter your employee id"
-          value={empid}
-          onChange={empidupdate}
-        />
-        <br />
-        <label>Password</label>
-        <br />
-        <input
-          type="password"
-          class="form-control registerform-control"
-          placeholder="Enter your password"
-          value={password}
-          onChange={passwordupdate}
-        />
-        <br />
+      <div className="registerbox">
+        <h1>Register Now !!</h1>
+        <div className="registerinputs">
+          <div className="input-box">
+            <input
+              type="text"
+              placeholder="Enter email"
+              value={email}
+              onChange={emailupdate}
+            />
+          </div>
+          <div className="input-box">
+            <input
+              type="text"
+              placeholder="Enter name"
+              value={name}
+              onChange={nameupdate}
+            />
+          </div>
+          <div className="input-box">
+            <input
+              type="text"
+              placeholder="Enter company"
+              value={company}
+              onChange={companyupdate}
+            />
+          </div>
+          <div className="input-box">
+            <input
+              type="text"
+              placeholder="Enter employee id"
+              value={empid}
+              onChange={empidupdate}
+            />
+          </div>
+          <div className="input-box">
+            <input
+              type="password"
+              placeholder="Enter password"
+              value={password}
+              onChange={passwordupdate}
+            />
+          </div>
+          <button onClick={registeruser}>Register</button>
+        </div>
       </div>
-      <button className="btn btn-danger btn-lg" onClick={registeruser}>
-        Register
-      </button>
       <ToastContainer
         position="top-right"
         autoClose={5000}
