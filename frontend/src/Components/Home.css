@@ -1,31 +1,11 @@
+img{
+    border-radius: 5%;
+    margin: 50px;
+}
+img:hover{
+    height: 75%;
+    width: 75%;
+}
 .homepage{
-    width: 100%;
-    display: flex;
-}
-.homepage .content{
-    padding-top: 180px;
-    padding-left: 55px;
-    width: 60%;
-}
-h2{
-    color: black;
-    font-size: 35px;
-  }
-.homeimage{
-    width: 40%;
-}
-
-.homeimg{
-    margin-top: 100px;
-    margin-left: 45px;
-    width:450px;
-    height: 450px;
-}
-.homebutton{
-    background-color: black;
-    width: 35%;
-    height: 10%;
-    border-radius: 25px;
-    color: white;
-    margin-top: 20px;
+    padding: 25px;
 }

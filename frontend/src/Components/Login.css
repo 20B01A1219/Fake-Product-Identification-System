@@ -89,3 +89,6 @@
    text-decoration: underline;
 }
 
+.login-box .btn:hover{
+   background: linear-gradient(to right, black, blue, violet);
+}

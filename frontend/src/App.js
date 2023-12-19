@@ -9,6 +9,7 @@ import Manufacturer from './Components/Manufacturer';
 import Profile from './Components/Profile';
 import Productvalidation from './Components/Productvalidation';
 import Addcsvfile from './Components/Addcsvfile';
+import Addproduct from './Components/Addproduct';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path = "/profile" element = {<Profile/>}/>
         <Route path = "/validateproduct" element = {<Productvalidation/>}/>
         <Route path = "/addmultipleproducts" element = {<Addcsvfile/>}/>
+        <Route path = "addsingleproduct" element = {<Addproduct/>}/>
         <Route path = "/*" element = {<Productvalidation/>}/>
         
       </Routes>

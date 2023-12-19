@@ -32,3 +32,7 @@ h5{
 .img img{
     height: 300px;
 }
+
+.manufacturerbtn:hover{
+    background: linear-gradient(to right, black, blue, violet);
+}

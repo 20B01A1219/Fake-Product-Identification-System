@@ -1,28 +1,16 @@
-.validationpage{
-    width: 100%;
-    display: flex;
-    margin-top: 100px;
+.qrreader{
+    width: 500px;
+    height: 500px;
+    margin-left: 500px;
 }
-.validationoptions{
-    padding-top: 80px;
-    padding-left: 100px;
+.validateproductdiv{
+    height: 1020px;
 }
-.validationoptions h4{
-    font-size: 32px;
+.validateproductdiv h1{
+    margin-top: 85px;
+    margin-left: 150px;
+
 }
-.validationoptions button{
-    background-color: black;
-    color: white;
-    width: 250px;
-    margin-top: 25px;
-    height: 40px;
-    border-radius: 25px;
-}
-.validationimg{
-    padding-top: 50px;
-    padding-left: 300px;
-}
-.validationimg img{
-    width: 300px;
-    height : 300px;
+.validateproductdiv p{
+    margin-left: 150px;
 }

@@ -9,6 +9,9 @@ function Manufacturer() {
     const multipleproducts =() =>{
         navigate("/addmultipleproducts");
     }
+    const singleproduct = () =>{
+        navigate("/addsingleproduct");
+    }
     return (
         
         <div className='manufacturepage'>
@@ -18,7 +21,7 @@ function Manufacturer() {
             <br />
             <button className="manufacturerbtn" onClick={multipleproducts}>Add multiple products</button>
             <br /><br />
-            <button className="manufacturerbtn">Add single product</button>
+            <button className="manufacturerbtn" onClick={singleproduct}>Add single product</button>
             
             </div>
             <div className="img">

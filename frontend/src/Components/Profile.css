@@ -2,7 +2,6 @@ table{
     width: 70%;
     margin-top: 60px;
     margin-left: 90px;
-    
 }
 .homepage{
     display: flex;
@@ -47,4 +46,7 @@ td{
     padding-top: 65px;
     width : 250px;
     height: 350px;
+}
+.productdetailsbtn:hover{
+    background: linear-gradient(to right, black, blue, violet);
 }

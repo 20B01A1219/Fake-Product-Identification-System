@@ -58,4 +58,7 @@
    font-weight: 600;
    margin-bottom: 20px;
 }
+.registerbox button:hover{
+    background: linear-gradient(to right, black, blue, violet);
+}
 

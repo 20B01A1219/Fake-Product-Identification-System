@@ -1,19 +1,30 @@
-import React from 'react';
+import React, { useState } from "react";
+import { QrReader } from "react-qr-reader";
 import "./Productvalidation.css";
-import qualitycheck from "./qualitycheck.jpg";
 function Productvalidation(props) {
-    return (
-        <div className='validationpage'>
-            <div className="validationoptions">
-                <h4>Hi there!</h4>
-                <h4>Start the camera and scan the QR code..</h4>
-                <button>Start the camera</button>
-            </div>
-            <div className="validationimg">
-                <img src={qualitycheck} alt="" />
-            </div>
-        </div>
-    );
+  const [validationstate, setvalidationstate] = useState("validating...");
+  const [scannedresult, setscannedresult] = useState("");
+  return (
+    <div className="validateproductdiv">
+      <div className="qrreader">
+        <h1>{validationstate}</h1>
+        <QrReader
+          onResult={(result, error) => {
+            if (!!result) {
+              setscannedresult(result?.text);
+              setvalidationstate("validated✔");
+            }
+
+            if (!!error) {
+              console.info(error);
+            }
+          }}
+          style={{ width: "100%" }}
+        />
+        <p>{scannedresult}</p>
+      </div>
+    </div>
+  );
 }
 
 export default Productvalidation;
