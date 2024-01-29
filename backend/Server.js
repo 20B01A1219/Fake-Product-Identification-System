@@ -1,6 +1,8 @@
 const express = require("express");
 const bodyparser = require("body-parser");
 const app = express();
+const cors = require("cors");
+app.use(cors());
 app.use(bodyparser.json());
 const port = 8000;
 const mysql_connector = require("mysql");
